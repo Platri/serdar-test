@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 100
+    allow:
+      - dependency-name: "nx"
+      - dependency-name: "@platri/elab-common-linter"
+      - dependency-name: "@platri/elab-common-tools"
+      - dependency-name: "@platri/elab-nest-auth"
+    assignees:
+      - "DritonUkic"
+      - "SerdarN92"
